@@ -17,7 +17,7 @@ namespace ConsoleXTBridge.utils
         private int  _maxPoolSize = 50; //最大连接数量
         
         private List<PoolConnection> _mConnectionPool = null;//连接池
-        private String _mConnectionStr = "Server=120.26.187.166;Port=3306;Database=XTBridge;Uid=root;Pwd=123456;";
+        private String _mConnectionStr = "Server=xxxx;Port=3306;Database=XTBridge;Uid=xxx;Pwd=xxxx;";
         private String testConnValidation = "select 1";
 
    
@@ -105,7 +105,6 @@ namespace ConsoleXTBridge.utils
                     conn = _mConnectionPool[i].getConnection();
 
                     /*会让效率降低 但是可以确保连接可用 
-                     * 但这样还不如不用连接池
                      */
                     
                     if (!testConnection(ref conn)) {

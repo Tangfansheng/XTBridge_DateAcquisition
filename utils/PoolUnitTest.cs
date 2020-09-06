@@ -23,7 +23,7 @@ namespace ConsoleXTBridge.utils
     class PoolUnitTest
     {
         
-        private static String connectStr = "Server=120.26.187.166;Port=3306;Database=XTBridge;Uid=root;Pwd=123456;";
+        private static String connectStr = "Server=xxxxx;Port=3306;Database=XTBridge;Uid=xxx;Pwd=xxxxx;";
         private static int numTest = 1000; 
 
         public static void test() {      
